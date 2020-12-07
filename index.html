@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>hh</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.scroll-down').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.bottom').offset().top
+                }, 'slow');
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+
+
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <script type="text/javascript" src="js/index.js"></script>
+
+
+
+
+
+
+
+
+        <div class="header">
+
+            <div class="container1">
+                <div class="inner-container1">
+                  <p>Settings</p>  
+                </div>
+                <div class="inner-container2">
+                <p style="margin-left: 10px;margin-top: 13px">|</p></div><div class="inner-container3"><p style="margin-left: 170px">Profile<p></div>
+            
+            </div>
+
+        </div>
+        <div class="outer">
+        <div class="middle">
+
+            <center>
+                <h1 style="color:white;font-size: 80px;font-family:cursive;margin-left: 150px;margin-top:0px;text-shadow:3px 3px black">HEALTH TIPS :)</h1>
+                <h2 style="color:white;margin-left: 80px;margin-top: -50px;font-style:oblique;text-shadow: 2px 2px black"> Live Well,Feel Great and Look Great</h2>
+            </center>
+
+        </div>
+
+        <section class="sec1">
+            <div class="content1">
+                <div class="box1 box">
+                    <h2 style="padding-left: 75px;"> <a href="https://en.wikipedia.org/wiki/Diet_(nutrition)" style="color:white;text-decoration: none">DIET</a></h2>
+                </div>
+                <div class="box2 box">
+                    <h2 style="padding-left:45px"><a href="https://en.wikipedia.org/wiki/Disease" style="color:white;text-decoration: none">DIESEASES</a></h2>
+                </div>
+                <div class="box3 box">
+                    <h2 style="padding-left: 40px"><a href="https://www.besthealthmag.ca/best-you/yoga/boost-your-yoga-practice-yogis-share-their-best-tips/" style="color:white;text-decoration: none">YOGA TIPS</a></h2>
+                </div>
+                <div class="box4 box">
+                    <h2 style="padding-left: 50px"><a href="https://www.healthline.com/health/fitness-exercises/10-best-exercises-everyday#start-here" style="color:white;text-decoration: none">EXERCISE</a></h2>
+                </div>
+            </div>
+            <div class="middle2">
+                <div class="middle2-1">
+                    <p style="padding:60px;margin-top: -40px;font-style: italic">Look out for your DIET at your own terms</p>
+                </div>
+                <div class="middle2-2">
+                    <p style="padding:60px;margin-top: -40px;font-style: italic">Know about any DISEASE easily with just a click</p>
+                </div>
+                <div class="middle2-3">
+                    <p style="padding:60px;margin-top: -40px;font-style: italic">Get experts tips on YOGA by clicking on the button</p>
+                </div>
+                <div class="middle2-4">
+                    <p style="padding:60px;margin-top: -40px;font-style: italic">Get easy EXERCISE tips here!</p>
+                </div>
+            </div>
+        </section>
+            
+        <div class="scrollbar">
+         <!--   <h1 style="margin-left: 710px;margin-top: 70px;font-family: cursive;align-content: center">health details</h1> -->
+            <section class="scroll">
+                <a href="#" class="scroll-down" address="true"></a>
+            </section>
+        </div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <h1 style="margin-left:          20px">Day : <span id="count"></span></h1>
+
+
+                <h2 style="margin-left: 60px;font-family:cursive;font-size: 29.1px">Enter your details about Health on a daily basis:</h2>
+                <table style="margin-left: 100px">
+                    <tr>
+                        <td>
+                            <h3>Blood Pressure Level : <input type="number" placeholder="mmHg" id="bpl"></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Blood Sugar Level : <input style="margin-left: 20px" type="number" placeholder="mmol/L" id="bsl"></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Calorie intake : <input style="margin-left: 52px" type="number" placeholder="cal" id="cal"></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="bt1" onclick="myfunction()" type="button" value="storedata">
+                      <a href="report.html">      <input id="bt2" onclick="fun()" type="button" value="Know your health"></a>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right"><p style="padding-top: 225px">"Be careful about reading health books.You may die of a misprint."</p></div>
+        </div>
+    </div>
+</body></html>
